@@ -1,0 +1,23 @@
+{
+  "name": "oauth-service",
+  "version": "1.0.0",
+  "description": "Template for OAuth server usable in microservice architecture",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "author": "ABDIOU Nassime",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mkcert": "^3.2.0",
+    "validator": "^13.11.0"
+  }
+}
