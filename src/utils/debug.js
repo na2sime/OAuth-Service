@@ -1,3 +1,9 @@
+/**
+ * Represents different levels of a variable.
+ *
+ * @enum {number}
+ * @readonly
+ */
 const levels = {
     NONE: 0,
     LOW: 1,
@@ -5,6 +11,10 @@ const levels = {
     HIGH: 3,
 };
 
+/**
+ * @description Represents the level of something.
+ * @typedef {string} Level
+ */
 let level = levels.HIGH;
 
 module.exports = {

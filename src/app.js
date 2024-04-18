@@ -3,10 +3,15 @@ const bodyParser = require("body-parser"); //Package gére à analyser data dans
 const app = express();
 const DebugControl = require('./utils/debug.js');
 const corsMiddleware = require("./middlewares/cors.middleware");
+const connectDatabase = require("./mongo/mongo");
 
 require('dotenv').config();
 
 const authRoutes = require("./routes/auth.route");
+
+require("dotenv").config({path: "../.env"});
+
+connectDatabase().then(r => console.log(r));
 
 //Custom le Headers des requêtes!
 app.use(corsMiddleware);
